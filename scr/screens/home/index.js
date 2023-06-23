@@ -42,10 +42,10 @@ const IndexHome = ({navigation}) => {
         <StatusBar backgroundColor={color.white} barStyle="dark-content" />
         <ScrollView showsVerticalScrollIndicator={false}>
             <View style={homeStyle.scrollView}>
-                <TouchableOpacity onPress={() => console.log(product)}>
+                <TouchableOpacity >
                     <Entypo name='shopping-bag' style={homeStyle.shoppingBagIcon} />
                 </TouchableOpacity>
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('mycart')}>
                     <Entypo name='shopping-cart' style={homeStyle.cart} />
                 </TouchableOpacity>
             </View>
